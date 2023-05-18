@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "angular-highcharts": "^15.0.1",
+    "highcharts": "^11.0.1"
+  }
+}

@@ -1,0 +1,37 @@
+<app-navbar>
+    
+</app-navbar>
+<!-- <main role="main" class="container mt-5">
+    <div class="container">
+      <div class="text-center mt-5">
+        <h3>Dashboard page</h3>
+        <p class="text-bold " [innerText]="'Hi '+this.user.displayName+', your Firebase ID is'+this.user.localId "></p>
+      </div>
+    </div>
+</main> -->
+
+<div class="bg">
+<div class="container header-root-div" #headerDiv>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 header-content-div">
+      <h5 *ngIf="this.user.displayName" class="welcomeName">Welcome! {{ this.user.displayName }},</h5>
+
+      <h1 class="header-content">Sales Prediction</h1>
+      <h1 class="header-content">Analysis</h1>
+
+      <button type="button" class="btn btn-primary header-button" routerLink="/predict-dataset" #samplesLink>
+        Predict Dataset
+      </button>
+    </div>
+    <div class="col-lg-6 col header-image-div">
+      <img
+        class="header-image"
+        src="../../assets/header-image.png"
+        alt="header_image"
+      />
+    </div>
+  </div>
+ </div>
+ </div>
+
+
