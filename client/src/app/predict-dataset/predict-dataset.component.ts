@@ -33,6 +33,11 @@ submitData() {
     console.log(res.data)
     this.actual=res.data["actual"]
     this.predicted=res.data["predicted"]
+    this.mse=res.data["mse"]
+    this.accuracy=res.data["accuracy"]
+    this.mape=res.data["mape"]
+
+
     this.actualChart = new Chart({
       chart: {
         type: 'line'
@@ -85,7 +90,11 @@ submitData() {
   completed=false
   actualChart
   predictedChart
-  
+  accuracy
+  mape
+  mse
+
+
   constructor(private readonly http: HttpClient, private router : Router) {}
   ngOnInit(): void {
     throw new Error('Method not implemented.');

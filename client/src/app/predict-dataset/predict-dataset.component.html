@@ -195,4 +195,8 @@
   <div *ngIf="completed" style="display: grid; grid-template-columns: 40% 40%;">
     <div class="actual" [chart]="actualChart" ></div>
     <div class="predicted" [chart]="predictedChart"></div>
+
+    <h3>Accuracy : {{accuracy}}</h3>
+    <h3>MAPE : {{mape}}</h3>
+    <h3>MSE : {{mse}}</h3>
   </div>

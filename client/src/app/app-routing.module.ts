@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PredictDatasetComponent } from './predict-dataset/predict-dataset.component';
 
-import { PredictionResultComponent } from './prediction-result/prediction-result.component';
+// import { PredictionResultComponent } from './prediction-result/prediction-result.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -15,8 +15,7 @@ const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
   {path:'predict-dataset',component:PredictDatasetComponent},
   
-  {path:'prediction-result',component:PredictionResultComponent},
-
+  
 ];
 
 @NgModule({
